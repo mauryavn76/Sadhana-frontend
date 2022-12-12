@@ -1,8 +1,8 @@
 const   AboutUs = () => {
   return (
-    <div className="grid grid-cols-2 h-full w-full px-20 py-20">
+    <div className="grid md:grid-cols-2 h-full w-full md:px-16 px-6 md:py-16 py-6">
       <div>
-        <img className="h-full w-full" src="images/about.jpg"/>
+        <img className=" h-full  w-full " src="images/about.jpg"/>
       </div>
       <div className="bg-[#FFFFD5] h-full font-medium text-sm my-2">
         <p className="p-2">Ancient science which could not be

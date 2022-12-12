@@ -51,7 +51,7 @@ const Navbar = () => {
   return (
     // <div className="fixed z-50 top-0">
     <nav
-      className="flex top-0  items-center bg-black text-white justify-around px-16 sticky z-20"
+      className="flex top-0 items-center bg-black text-white md:justify-around justify-end px-16 sticky z-20"
       style={{ height: navHeight }}
     >
       <div className="hidden md:block md:h-full">
@@ -79,9 +79,9 @@ const Navbar = () => {
           })}
         </ul>
       </div>
-      <div className='flex items-center justify-between px-3 w-80 py-[5px] rounded-full bg-white'>
+      <div className='hidden md:flex items-center justify-between px-3 md:w-[20%] w-[70%] py-[5px] rounded-full bg-white'>
         <input type="text"
-          className="h-full text-black w-[80%] outline-none"
+          className="  h-full text-black w-[80%] outline-none"
           placeholder='Search...'
         />
         <SearchIcon className='text-black' />
