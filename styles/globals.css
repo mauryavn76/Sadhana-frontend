@@ -1,0 +1,303 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  background-color: white;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+ul li {
+  list-style: disc;
+}
+
+ol li {
+  list-style: decimal;
+}
+
+#app-main ::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.modal-content {
+  width: 60% !important;
+}
+
+.modal-dialog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MuiDataGrid-row:nth-child(even) {
+  background-color: aliceblue;
+}
+
+.paginationBttns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.previousButton {
+  color: black;
+  background: #b7e7f1;
+  /* border: 1px solid black; */
+  /* color: black; */
+  /* width: 100px; */
+  padding: 5px 20px;
+  text-decoration: none;
+}
+
+.nextButton {
+  background: #00b7db;
+  color: white;
+  /* border: 1px solid black; */
+  /* color: black; */
+  /* width: 100px; */
+  padding: 5px 20px;
+  text-decoration: none;
+}
+
+.paginationBttns li {
+  padding: 5px 15px;
+}
+
+.paginationActive {
+  color: white;
+  background: #00b7db;
+}
+
+.mapContainer {
+  width: 70%;
+  height: 50vh;
+}
+/* 
+.dangerous  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .modal-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} */
+
+.modal-body {
+  padding: 0;
+}
+
+.modal1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: fit-content;
+  flex: 1;
+  flex-direction: row;
+}
+
+.modal2 {
+  width: fit-content;
+  overflow-y: auto;
+  height: calc(90vh - 370px);
+}
+
+.modal2 p {
+  margin: 0;
+}
+
+.slider {
+  animation: toLeft 0.7s;
+  position: relative;
+  /* width: 70%; */
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#slider {
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes toLeft {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 70px;
+  }
+}
+
+.slider2 {
+  animation: toRight 0.7s;
+  position: relative;
+  width: 40%;
+  margin-top: 19px;
+  margin-bottom: 22px;
+  /* display: flex;
+  flex: 1;
+  justify-content: end;
+  align-items: end; */
+}
+.slider3 img {
+  animation: toRight 0.7s;
+  position: relative;
+  width: 40%;
+  margin-top: 19px;
+  margin-bottom: 22px;
+  /* display: flex;
+  flex: 1;
+  justify-content: end;
+  align-items: end; */
+}
+/* .slider2 img {
+  float: right;
+} */
+.slider2 p {
+  /* margin-left: 150px; */
+  padding-left: 175px;
+  padding-top: 275px;
+  margin-top: 65px;
+  /* text-align: center; */
+}
+/* .slider2 img {
+  height: 100%;
+} */
+
+#slider2 {
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+#slider3 img {
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  /* margin: 0; */
+}
+
+@keyframes toRight {
+  from {
+    right: 0px;
+  }
+  to {
+    right: 40px;
+  }
+}
+
+#showapp {
+  max-height: 400px;
+}
+
+.homepage-button {
+  background-color: lightseagreen;
+  color: white;
+  font-size: 22px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  height: 70px;
+  width: 200px;
+  /* padding-left: 5px;
+  padding-right: 5px; */
+}
+
+.homepage-button:hover {
+  color: lightseagreen;
+  border-radius: lightseagreen;
+  border: 2;
+  border: solid;
+  background-color: white;
+  font-size: 22px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  height: 70px;
+  width: 200px;
+  transition: ease-out 0.3s;
+}
+
+#animate {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) forwards;
+  /* animation-fill-mode: forwards; */
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+#imganimation {
+  -webkit-animation-iteration-count: 10;
+  animation-iteration-count: 10;
+}
+
+.search-symptoms-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-auto-rows: auto; */
+  grid-auto-rows: minmax(min-content, max-content);
+  /* grid-template-rows: 56px 1fr 100px; */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+table,
+th,
+td {
+  padding: 10px 20px;
+  border: 1px solid black !important;
+  border-collapse: collapse !important;
+}
+
+th {
+  text-align: center !important;
+  color: #fff !important;
+  background-color: #00b7db;
+}
+
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+  padding: 0px;
+  height: 30px;
+  width: 50px;
+  background-color: black;
+  color: white;
+  border: black;
+}
+
+#app-animation2 {
+  -webkit-animation-iteration-count: 10;
+   animation-iteration-count: 10;
+}
+
+
+  
