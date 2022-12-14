@@ -2,8 +2,8 @@ const AwarenessHome = () => {
     return ( 
         <>
         <div className="grid md:grid-cols-2 h-full w-full md:px-20 px-6 md:py-20 py-6">
-            <div className='h-full w-full'>
-            <img className="bg-sky-800" src="images/our-platform.png"/>
+            <div className='flex justify-center items-center h-full w-full'>
+            <img className="bg-sky-800 md:h-[70vh] h-[50vh] " src="images/our-platform.png"/>
             </div>
             <div className="text-3xl font-serif flex justify-center items-center flex-col">
                 <p className="font-semibold mt-4">Health Help</p>

@@ -83,9 +83,9 @@ const ContactUs = () => {
 
   return (
     <Fragment>
-      <div className={`flex items-center bg-white h-[calc(100vh-80px)] px-10`}>
+      <div className={` md:flex flex-row items-center bg-white h-[calc(100vh-80px)] px-10`}>
         <div className="flex-1 flex justify-center">
-        <div className="bg-gray-300 flex justify-center h-full w-full">
+        <div className="bg-gray-300 flex justify-center md:mt-5 mt-5 md:mb-5 mb-5 h-full w-full">
         <div className="bg-white px-10 py-10 h-full w-full shadow-lg border-0 my-12">
           <form>
             <div className="flex w-full">

@@ -1,23 +1,25 @@
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
-import SidebarItems from './sidebar-items';
-import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
-import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
-import RssFeedOutlinedIcon from '@mui/icons-material/RssFeedOutlined';
-import SickOutlinedIcon from '@mui/icons-material/SickOutlined';
-import AirlineSeatLegroomExtraOutlinedIcon from '@mui/icons-material/AirlineSeatLegroomExtraOutlined';
-import MasksOutlinedIcon from '@mui/icons-material/MasksOutlined';
-import AppShortcutOutlinedIcon from '@mui/icons-material/AppShortcutOutlined';
-import PersonAddAltOutlinedIcon from '@mui/icons-material/PersonAddAltOutlined';
-import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
-import AddCircleOutlineOutlinedIcon from '@mui/icons-material/AddCircleOutlineOutlined';
-import AlignHorizontalLeftOutlinedIcon from '@mui/icons-material/AlignHorizontalLeftOutlined';
-import PsychologyOutlinedIcon from '@mui/icons-material/PsychologyOutlined';
-import CoronavirusOutlinedIcon from '@mui/icons-material/CoronavirusOutlined';
-import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
-import LoaderFunction from '../multiusable/loader';
-import TransparantButton from '../multiusable/transparent-button';
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import SidebarItems from "./sidebar-items";
+import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
+import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
+import RssFeedOutlinedIcon from "@mui/icons-material/RssFeedOutlined";
+import SickOutlinedIcon from "@mui/icons-material/SickOutlined";
+import AirlineSeatLegroomExtraOutlinedIcon from "@mui/icons-material/AirlineSeatLegroomExtraOutlined";
+import MasksOutlinedIcon from "@mui/icons-material/MasksOutlined";
+import AppShortcutOutlinedIcon from "@mui/icons-material/AppShortcutOutlined";
+import PersonAddAltOutlinedIcon from "@mui/icons-material/PersonAddAltOutlined";
+import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
+import AddCircleOutlineOutlinedIcon from "@mui/icons-material/AddCircleOutlineOutlined";
+import AlignHorizontalLeftOutlinedIcon from "@mui/icons-material/AlignHorizontalLeftOutlined";
+import PsychologyOutlinedIcon from "@mui/icons-material/PsychologyOutlined";
+import CoronavirusOutlinedIcon from "@mui/icons-material/CoronavirusOutlined";
+import LogoutOutlinedIcon from "@mui/icons-material/LogoutOutlined";
+import LoaderFunction from "../multiusable/loader";
+import TransparantButton from "../multiusable/transparent-button";
+import { useAutoAnimate } from "@formkit/auto-animate/react";
+
 // import {logOut} from 'next-auth/react'
 // import nextAuth from 'next-auth';
 // import NextAuth from './[next-auth]';
@@ -27,17 +29,18 @@ const Sidebar = () => {
   const router = useRouter();
   const [dropdown, setDropdown] = useState(false);
   const [user, setUser] = useState();
-  const [muiSpinner, setShowMuiSpinner] = useState('');
+  const [muiSpinner, setShowMuiSpinner] = useState("");
   const showMenu = () => setDropdown(!dropdown);
+  const [animationParent] = useAutoAnimate();
 
   const logOut = () => {
     localStorage.clear();
-    router.push('/user/login');
+    router.push("/user/login");
   };
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      setUser(JSON.parse(localStorage.getItem('user')));
+    if (typeof window !== "undefined") {
+      setUser(JSON.parse(localStorage.getItem("user")));
     }
   }, []);
 
@@ -45,94 +48,97 @@ const Sidebar = () => {
 
   const dashBoardItems = [
     {
-      title: 'Home',
+      title: "Home",
       icon: <HomeOutlinedIcon />,
-      link: '/admin',
+      link: "/admin",
     },
     {
-      title: 'User',
+      title: "User",
       icon: <PersonOutlineOutlinedIcon />,
       dropdown: [
         {
           icon: <PersonAddAltOutlinedIcon />,
-          title: 'Add User',
-          link: '/admin/users/create-user',
+          title: "Add User",
+          link: "/admin/users/create-user",
         },
         {
           icon: <AccountCircleOutlinedIcon />,
-          title: 'All Users',
-          link: '/admin/users/get-users',
+          title: "All Users",
+          link: "/admin/users/get-users",
         },
       ],
     },
     {
-      title: 'Blogs',
+      title: "Blogs",
       icon: <RssFeedOutlinedIcon />,
       dropdown: [
         {
           icon: <AddCircleOutlineOutlinedIcon />,
-          title: 'Add new blog',
-          link: '/admin/blogs/create-blog',
+          title: "Add new blog",
+          link: "/admin/blogs/create-blog",
         },
         {
           icon: <AlignHorizontalLeftOutlinedIcon />,
-          title: 'All blog',
-          link: '/admin/blogs/get-blogs',
+          title: "All blog",
+          link: "/admin/blogs/get-blogs",
         },
       ],
     },
     {
-      title: 'Symptoms',
+      title: "Symptoms",
       icon: <SickOutlinedIcon />,
-      link: '/admin/symptoms',
+      link: "/admin/symptoms",
     },
     {
-      title: 'Body Part',
+      title: "Body Part",
       icon: <AirlineSeatLegroomExtraOutlinedIcon />,
-      link: '/admin/body_part',
+      link: "/admin/body_part",
     },
     {
-      title: 'Disease Details',
+      title: "Disease Details",
       icon: <MasksOutlinedIcon />,
       // link: "/admin/add-disease",
       dropdown: [
         {
           // icon: </>,
-          title: 'Disease Tabs',
-          link: '/admin/disease-details/disease-tabs',
+          title: "Disease Tabs",
+          link: "/admin/disease-details/disease-tabs",
         },
         {
           // icon:</>
-          title: 'Add Diseases',
-          link: '/admin/disease-details/Diseases',
+          title: "Add Diseases",
+          link: "/admin/disease-details/Diseases",
         },
         {
           // icon:</>
-          title: 'All Diseases',
-          link: '/admin/disease-details/alldiseases',
+          title: "All Diseases",
+          link: "/admin/disease-details/alldiseases",
         },
       ],
     },
     {
-      title: 'App Details',
+      title: "App Details",
       icon: <AppShortcutOutlinedIcon />,
       dropdown: [
         {
           icon: <PsychologyOutlinedIcon />,
-          title: 'Body Parts',
-          link: '/admin/app-details/body-parts',
+          title: "Body Parts",
+          link: "/admin/app-details/body-parts",
         },
         {
           icon: <CoronavirusOutlinedIcon />,
-          title: 'Diseases',
-          link: '/admin/app-details/Diseases',
+          title: "Diseases",
+          link: "/admin/app-details/Diseases",
         },
       ],
     },
   ];
-  console.log('env', process.env.NEXT_PUBLIC_ENVIRONMENT);
+  console.log("env", process.env.NEXT_PUBLIC_ENVIRONMENT);
   return (
-    <div className="sticky admin-sidebar top-0 left-0 w-1/5 h-screen flex flex-col justify-between bg-bg-admin-sidebar">
+    <div
+      id="sidebar"
+      className="sticky top-0 left-0 w-1/5 h-screen flex flex-col justify-between bg-bg-admin-sidebar"
+    >
       <div className="flex justify-between bg-bg-admin-sidebar-top py-2 px-4">
         <Link href="/admin">
           <h1 className="cursor-pointer text-sidebar-title text-xl font-bold">
@@ -141,7 +147,7 @@ const Sidebar = () => {
         </Link>
 
         <button className="flex justify-center items-center bg-bg-sidebar-button py-1 px-2 text-sm font-medium rounded-lg">
-          {user?.full_name?.split(' ')[0]}
+          {user?.full_name?.split(" ")[0]}
           {/* <i className="fa-solid fa-caret-down ml-1"></i> */}
         </button>
       </div>

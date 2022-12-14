@@ -1,7 +1,7 @@
 const   AboutUs = () => {
   return (
     <div className="grid md:grid-cols-2 h-full w-full md:px-16 px-6 md:py-16 py-6">
-      <div>
+      <div className="mt-4">
         <img className=" h-full  w-full " src="images/about.jpg"/>
       </div>
       <div className="bg-[#FFFFD5] h-full font-medium text-sm my-2">

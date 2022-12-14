@@ -22,6 +22,10 @@ ol li {
   display: none;
 }
 
+#sidebar ::-webkit-scrollbar {
+  display: none;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -301,3 +305,11 @@ th {
 
 
   
+/* .side-icon{
+  transition:all ease-in-out;
+  transition-delay: 3s;
+} */
+
+#icon {
+  animation-delay: 1s;
+}
