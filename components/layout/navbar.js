@@ -49,7 +49,6 @@ const Navbar = () => {
   });
 
   return (
-    // <div className="fixed z-50 top-0">
     <nav
       className="flex top-0 items-center bg-black text-white md:justify-around justify-end px-16 sticky z-20"
       style={{ height: navHeight }}
