@@ -1,34 +1,34 @@
-import Link from 'next/link';
-import React from 'react';
+import Link from "next/link";
+import React from "react";
 export const MobileMenu = ({ isOpen, setIsOpen }) => {
   const nav = [
     {
-      title: 'Home',
+      title: "Home",
       // dropdown: ['item1', 'item2'],
-      link: '/',
+      link: "/",
     },
     {
-      title: 'About Us',
+      title: "About Us",
       // dropdown: ['item1', 'item2'],
-      link: '/about-us',
+      link: "/about-us",
     },
     {
-      title: 'Diagnose Disease',
-      link: '/appv3',
+      title: "Diagnose Disease",
+      link: "/appv3",
     },
     {
-      title: 'Awareness',
-      link: '/awareness'
+      title: "Awareness",
+      link: "/awareness",
     },
     {
-      title: 'Blog',
+      title: "Blog",
       // dropdown: ['item1', 'item2'],
-      link: '/blogs',
+      link: "/blogs",
     },
     {
-      title: 'Contact Us',
+      title: "Contact Us",
       // dropdown: ['item1', 'item2'],
-      link: '/contact-us',
+      link: "/contact-us",
     },
   ];
   return (
@@ -42,8 +42,9 @@ export const MobileMenu = ({ isOpen, setIsOpen }) => {
         <div></div>
       )}
       <div
-        className={`${isOpen ? 'translate-x-0' : 'translate-x-full'
-          } ease-in-out duration-500 h-screen fixed top-0 right-0 z-30  bg-dropdown-bg text-white`}
+        className={`${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        } ease-in-out duration-500 h-screen fixed top-0 right-0 z-30  bg-dropdown-bg text-white`}
       >
         <div className="h-20 search flex  bg-dropdown-bg text-md">
           <input
@@ -62,16 +63,11 @@ export const MobileMenu = ({ isOpen, setIsOpen }) => {
           </span>
         </div>
         <div className="px-7">
-
           <ul className="space-y-10 mt-4 cursor-pointer">
-            {nav.map((item) => {
+            {nav.map((item, i) => {
               return (
-                <Link href={item.link}>
-                  <li
-
-                  >
-                    {item.title}
-                  </li>
+                <Link key={i} href={item.link}>
+                  <li>{item.title}</li>
                 </Link>
               );
             })}
