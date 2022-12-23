@@ -1,20 +1,19 @@
 // import { useEffect, useState } from 'react';
 // import Head from 'next/head';
-import dynamic from 'next/dynamic';
+import dynamic from "next/dynamic";
 // // import Button from '../../../../components/multiusable/button';
 // // import apiClient from '../api/api_client';
-import 'suneditor/dist/css/suneditor.min.css'; // Import Sun Editor's CSS File
-import BASE_URL from '../../../../utils/base-url';
+import "suneditor/src/css/suneditor.min.css"; // Import Sun Editor's CSS File
+import BASE_URL from "../../../../utils/base-url";
 // import Button from '../../../../components/multiusable/button';
-import EditBlog from '../../../../components/admin/Draft/EditBlog';
-import config from '../../../../Config'
+import EditBlog from "../../../../components/admin/Draft/EditBlog";
+import config from "../../../../Config";
 // import TextInput from '../../../../components/multiusable/text-input';
 // import TextArea from '../../../../components/multiusable/text-area'
 
 // const SunEditor = dynamic(() => import("suneditor-react"), {
 //   ssr: false,
 // });
-
 
 // const Editor = ({ details }) => {
 
@@ -59,32 +58,26 @@ import config from '../../../../Config'
 
 // export default Editor;
 
-
-
-
-
-
-
 import { useEffect, useRef, useState } from "react";
 // import Draft from "../../../components/admin/Draft/Draft";
 // import BASE_URL from "../../../utils/base-url";
-import TextInput from '../../../../components/multiusable/text-input';
-import Textarea from '../../../../components/multiusable/text-area';
+import TextInput from "../../../../components/multiusable/text-input";
+import Textarea from "../../../../components/multiusable/text-area";
 import WallpaperOutlinedIcon from "@mui/icons-material/WallpaperOutlined";
 // import Button from "../../../components/multiusable/button";
 import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 import FileUploadOutlinedIcon from "@mui/icons-material/FileUploadOutlined";
-import Header from '../../../../components/multiusable/header';
+import Header from "../../../../components/multiusable/header";
 // import LoaderFunction from "../../../components/multiusable/loader";
 import Snackbar from "@mui/material/Snackbar";
-import Button from '../../../../components/multiusable/button';
+import Button from "../../../../components/multiusable/button";
 
 const CreateBlog = ({ details }) => {
   const [body, setBody] = useState(details[0].data);
   const [dropdown, setDropdown] = useState(false);
   const [title, setTitle] = useState(details[0].title);
   const [desc, setDesc] = useState(details[0].description);
-  console.log(details)
+  console.log(details);
   const [image, setImage] = useState("");
   const [viewImage, setViewImage] = useState("");
   const [muiSpinner, setShowMuiSpinner] = useState("");
@@ -99,8 +92,8 @@ const CreateBlog = ({ details }) => {
   });
 
   const onChange = (data) => {
-    setBody(data)
-  }
+    setBody(data);
+  };
 
   const { vertical, horizontal, open } = state;
 
@@ -213,7 +206,10 @@ const CreateBlog = ({ details }) => {
           <div className="border-neutral-400 border-2 flex justify-center items-center flex-col border-separate h-32 w-32 mt-11 ml-16">
             {!viewImage ? (
               <>
-                <img className="h-full w-full" src={config.imageUrl + '/' + details[0].image} />
+                <img
+                  className="h-full w-full"
+                  src={config.imageUrl + "/" + details[0].image}
+                />
               </>
             ) : (
               <img className="h-full w-full" src={viewImage} />
@@ -267,7 +263,6 @@ const CreateBlog = ({ details }) => {
 };
 export default CreateBlog;
 
-
 export async function getServerSideProps(context) {
   const title = context.params.blogslug;
   const res = await BASE_URL.get("/blog/" + title);
@@ -278,5 +273,4 @@ export async function getServerSideProps(context) {
       details,
     },
   };
-
 }
