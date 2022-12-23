@@ -3,7 +3,7 @@
 import dynamic from "next/dynamic";
 // // import Button from '../../../../components/multiusable/button';
 // // import apiClient from '../api/api_client';
-import "suneditor/src/css/suneditor.min.css"; // Import Sun Editor's CSS File
+import "suneditor/dist/css/suneditor.min.css"; // Import Sun Editor's CSS File
 import BASE_URL from "../../../../utils/base-url";
 // import Button from '../../../../components/multiusable/button';
 import EditBlog from "../../../../components/admin/Draft/EditBlog";

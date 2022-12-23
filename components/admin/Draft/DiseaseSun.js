@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import dynamic from "next/dynamic";
-import "suneditor/src/css/suneditor.min.css"; // Import Sun Editor's CSS File
+import "suneditor/dist/css/suneditor.min.css"; // Import Sun Editor's CSS File
 
 const SunEditor = dynamic(() => import("suneditor-react"), {
   ssr: false,
