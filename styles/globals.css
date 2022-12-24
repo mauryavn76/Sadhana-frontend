@@ -313,3 +313,14 @@ th {
 #icon {
   animation-delay: 1s;
 }
+
+#about img {
+  transition: 1s ease;
+}
+
+#about img:hover{
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  transition: 1s ease;
+}
