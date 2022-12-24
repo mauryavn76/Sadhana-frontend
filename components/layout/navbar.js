@@ -16,6 +16,7 @@ const Navbar = () => {
       // dropdown: ['item1', 'item2'],
       link: "/",
     },
+
     {
       title: "About Us",
       // dropdown: ['item1', 'item2'],
