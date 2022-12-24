@@ -141,7 +141,7 @@ const Sidebar = () => {
     >
       <div className="flex justify-between bg-bg-admin-sidebar-top py-2 px-4">
         <Link href="/admin">
-          <h1 className="cursor-pointer text-sidebar-title text-xl font-bold">
+          <h1 className="cursor-pointer text-sidebar-tipatle text-xl font-bold">
             Sadhana <span>{process.env.NEXT_PUBLIC_ENVIRONMENT}</span>
           </h1>
         </Link>
