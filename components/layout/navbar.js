@@ -1,52 +1,45 @@
-import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
-import Dropdown from './dropdown';
-import { useRouter } from 'next/router';
-import { MobileMenu } from './MobileMenu';
-import SearchIcon from '@mui/icons-material/Search';
+import React, { useState, useEffect } from "react";
+import Link from "next/link";
+import Dropdown from "./dropdown";
+import { useRouter } from "next/router";
+import { MobileMenu } from "./MobileMenu";
+import SearchIcon from "@mui/icons-material/Search";
 
 const Navbar = () => {
   const router = useRouter();
   const [mobileMenu, setMobileMenu] = useState(false);
-  const [navHeight, setNavHeight] = useState('80px');
+  const [navHeight, setNavHeight] = useState("80px");
 
   const nav = [
     {
-      title: 'Home',
+      title: "Home",
       // dropdown: ['item1', 'item2'],
-      link: '/',
+      link: "/",
     },
     {
-      title: 'About Us',
+      title: "About Us",
       // dropdown: ['item1', 'item2'],
-      link: '/about-us',
+      link: "/about-us",
     },
     {
-      title: 'Diagnose Disease',
-      link: '/appv3',
+      title: "Diagnose Disease",
+      link: "/appv3",
     },
     {
-      title: 'Awareness',
-      link: '/awareness'
+      title: "Awareness",
+      link: "/awareness",
     },
     {
-      title: 'Blog',
+      title: "Blog",
       // dropdown: ['item1', 'item2'],
-      link: '/blogs',
+      link: "/blogs",
     },
     {
-      title: 'Contact Us',
+      title: "Contact Us",
       // dropdown: ['item1', 'item2'],
-      link: '/contact-us',
+      link: "/contact-us",
     },
   ];
-
-  const listenScrollEvent = () => {
-    window.scrollY > 200 ? setNavHeight('50px') : setNavHeight('80px');
-  };
-  useEffect(() => {
-    window.addEventListener('scroll', listenScrollEvent);
-  });
 
   return (
     <nav
@@ -64,8 +57,9 @@ const Navbar = () => {
                 <div className="flex items-start space-x-1">
                   <Link href={item.link}>
                     <span
-                      className={`${router.pathname === item.link && 'text-blue-400'
-                        }`}
+                      className={`${
+                        router.pathname === item.link && "text-blue-400"
+                      }`}
                     >
                       {item.title}
                     </span>
@@ -78,12 +72,13 @@ const Navbar = () => {
           })}
         </ul>
       </div>
-      <div className='hidden md:flex items-center justify-between px-3 md:w-[20%] w-[70%] py-[5px] rounded-full bg-white'>
-        <input type="text"
+      <div className="hidden md:flex items-center justify-between px-3 md:w-[20%] w-[70%] py-[5px] rounded-full bg-white">
+        <input
+          type="text"
           className="  h-full text-black w-[80%] outline-none"
-          placeholder='Search...'
+          placeholder="Search..."
         />
-        <SearchIcon className='text-black' />
+        <SearchIcon className="text-black" />
       </div>
       <div className="hidden md:flex md:cursor-pointer md:text-xl md:space-x-5 md:text-dropdown-item-color">
         <i className="fa-brands fa-facebook-f"></i>
