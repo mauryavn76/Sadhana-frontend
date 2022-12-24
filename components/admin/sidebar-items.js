@@ -14,7 +14,6 @@ const SidebarItems = ({ item }) => {
   useEffect(() => {
     parent.current && autoAnimate(parent.current);
   }, [parent]);
-
   return (
     <div className="mx-8 my-4 text-sm">
       <div
