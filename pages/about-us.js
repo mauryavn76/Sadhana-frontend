@@ -8,7 +8,7 @@ function About() {
         <div className="">
           {/* <p className="underline text-3xl font-semibold">About Us</p> */}
           <div className="">
-            <div className="grid grid-cols-[50%_50%] bg-white px-2 text-black mx-5 my-3">
+            <div className="grid grid-cols-[50%_50%] bg-[#36bcaf] px-2 text-black mx-5 my-3">
               <div className="text-sm px-10 py-5">
                 <p className="font-semibold text-3xl text-center text-gray-800 mb-3">
                   HUMAN BODY
@@ -52,8 +52,8 @@ function About() {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-[50%_50%] text-xl text-black px-5 py-5 bg-white mx-5 my-3">
-            <div>
+          <div className="grid grid-cols-[50%_50%] text-xl text-black px-5 py-5 bg-[#7d9e84] mx-5 my-3">
+            <div className=''>
               <span className="font-semibold text-3xl pl-1.5 text-gray-800">
                 SADHANA
               </span>
@@ -86,7 +86,14 @@ function About() {
                 mystics; modern psychology; and Eastern techniques such as yoga
                 and Zen Buddhism.
               </p>
-              <span className="font-semibold text-3xl pl-1.5 text-gray-800">
+            </div>
+            <div id='about'>
+            <img className="h-full w-full my-2" src="/images/sadhana.jpg" />
+            </div>
+          </div>
+                 <div className='grid grid-cols-[50%_50%] text-xl bg-[#c8934a] text-black px-5 py-5 mx-5 my-3'>
+              <div className=''>
+            <span className="font-semibold text-3xl pl-1.5 text-gray-800">
                 ANCIENT CULTURE AND SCIENCE
               </span>
               <p className="px-2 py-2 text-base">
@@ -112,16 +119,16 @@ function About() {
                 people, the biggest doctors, the biggest scientist, the
                 strongest person would have never died.
               </p>
+              </div>
+              <div id='about'>
+              <img className="h-full w-full my-2" src="/images/ayur.jpg" />
+              </div>
             </div>
+          <div className="grid grid-cols-[50%_50%] px-5 py-5 text-black text-sm bg-[#6bcbd4] mx-5 my-3">
             <div>
-              <img className="h-[50%] my-2" src="/images/sadhana.jpg" />
-              <img className="h-[50%] my-2" src="/images/ayur.jpg" />
-            </div>
-          </div>
-          <div className="px-5 py-5 text-black text-base bg-white mx-5 my-3">
-            <span className="font-semibold text-3xl pl-1.5 text-gray-800">
+            <p className="font-semibold text-3xl pl-1.5 text-gray-800">
               PURPOSE OF THIS WEBSITE
-            </span>
+            </p>
             <p className="px-2 py-2">
               This website is an effort by Maa Ambey Education and Welfare
               foundation, a nonprofit organization, to assist and increase
@@ -157,6 +164,10 @@ function About() {
               probabilities, while as almighty has not created every individual
               different from other.
             </p>
+            </div>
+            <div id='about'>
+              <img className='h-full w-full' src="/images/purpose.webp"/>
+            </div>
           </div>
         </div>
       </div>
