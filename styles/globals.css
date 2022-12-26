@@ -22,6 +22,10 @@ ol li {
   display: none;
 }
 
+#about-main ::-webkit-scrollbar {
+  display: none;
+}
+
 #sidebar ::-webkit-scrollbar {
   display: none;
 }

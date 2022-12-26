@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 function About() {
   return (
@@ -8,165 +8,187 @@ function About() {
         <div className="">
           {/* <p className="underline text-3xl font-semibold">About Us</p> */}
           <div className="">
-            <div className="grid grid-cols-[50%_50%] bg-[#36bcaf] px-2 text-black mx-5 my-3">
+            <div
+              id="about-main"
+              className="grid grid-cols-[50%_50%] bg-[#36bcaf] h-[calc(100vh-80px)] px-2 text-black mx-5 my-3"
+            >
               <div className="text-sm px-10 py-5">
                 <p className="font-semibold text-3xl text-center text-gray-800 mb-3">
                   HUMAN BODY
                 </p>
-                <p className="text-base">
-                  The Vedas (ancient Hindu Scriptures) state that the human body
-                  is a miniature world!
-                </p>
-                <p className="text-base">
-                  Majority of People, who have devoted their life in
-                  understanding the human body and almighties other creations,
-                  admit above. Anatomy of the body is understood by science. But
-                  science is still in the process of understanding the exact
-                  impact of other factors on body, like good feelings like
-                  peace, happiness etc. and bad feelings like lust, wrath,
-                  greed, attachment, ego etc.
-                </p>
-                <p className="text-base">
-                  But we all know sentiments along with what we eat or drink,
-                  what we think, all impact our body.
-                </p>
-                <p className="text-base">
-                  Nature, which provides air and water, is the biggest need of
-                  the human body. How the body uses them also has impacts on our
-                  body. The breath influences our brain and our mind. Scientists
-                  have found that when you breathe through the right nostril,
-                  the metabolism in your body is twice as much as when you
-                  breathe through the left nostril. When you breathe through
-                  your left nostril, it affects the right side of your brain,
-                  and when you breathe through the right nostril, it affects the
-                  left side of the brain. Breath – It is the most important
-                  source of energy. The breath can help us energize our whole
-                  system. If you are tired, and you try some breathing
-                  exercises, change your breathing pattern, you will feel
-                  energetic. A few minutes of meditation energizes your system,
-                  bringing your mind to a happy and pleasant state.
-                </p>
+                <div className="h-[65vh] overflow-y-auto">
+                  <p className="text-base my-0">
+                    The Vedas (ancient Hindu Scriptures) state that the human
+                    body is a miniature world!
+                  </p>
+                  <p className="text-base my-0">
+                    Majority of People, who have devoted their life in
+                    understanding the human body and almighties other creations,
+                    admit above. Anatomy of the body is understood by science.
+                    But science is still in the process of understanding the
+                    exact impact of other factors on body, like good feelings
+                    like peace, happiness etc. and bad feelings like lust,
+                    wrath, greed, attachment, ego etc.
+                  </p>
+                  <p className="text-base my-0">
+                    But we all know sentiments along with what we eat or drink,
+                    what we think, all impact our body.
+                  </p>
+                  <p className="text-base my-0">
+                    Nature, which provides air and water, is the biggest need of
+                    the human body. How the body uses them also has impacts on
+                    our body. The breath influences our brain and our mind.
+                    Scientists have found that when you breathe through the
+                    right nostril, the metabolism in your body is twice as much
+                    as when you breathe through the left nostril. When you
+                    breathe through your left nostril, it affects the right side
+                    of your brain, and when you breathe through the right
+                    nostril, it affects the left side of the brain. Breath – It
+                    is the most important source of energy. The breath can help
+                    us energize our whole system. If you are tired, and you try
+                    some breathing exercises, change your breathing pattern, you
+                    will feel energetic. A few minutes of meditation energizes
+                    your system, bringing your mind to a happy and pleasant
+                    state.
+                  </p>
+                </div>
               </div>
-              <div id="about" className="px-2">
+              <div id="about" className="px-2 ">
                 <img className="h-full w-full" src="/images/about.svg" />
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-[50%_50%] text-xl text-black px-5 py-5 bg-[#7d9e84] mx-5 my-3">
-            <div className=''>
+          <div
+            id="about-main"
+            className="grid grid-cols-[50%_50%]  h-[calc(100vh-80px)] text-xl text-black px-5 py-5 bg-[#7d9e84] mx-5 my-3"
+          >
+            <div className="">
               <span className="font-semibold text-3xl pl-1.5 text-gray-800">
                 SADHANA
               </span>
-              <p className="px-2 py-2 text-base">
-                Sadhana refers to the process of mastering (saadh-ne-ko) senses,
-                Sadhana is not a particular aspect of life but it’s an act of
-                continuous nurturing of both internal and external due to
-                absolute devotion towards own will. Human nature needs dynamism,
-                some movement in life for betterment within and outside of
-                himself without that he feels frustrated. He must keep moving to
-                newer and newer possibilities. Sadhana is that which facilitates
-                that.
-              </p>
-              <p className="px-2 py-2 text-base">
-                Every action can be sadhana, if done with absolute will &
-                nature, it will promote you towards your enrichment. Sadhana
-                does not mean any specific kind of activity such as spiritual
-                ritual, sadhana means you are mastering your action as a tool
-                for your wellbeing.
-              </p>
-              <p className="px-2 py-2 text-base">
-                Spiritual director and retreat leader Anthony de Mello in the
-                path breaking book speaks boldly in favour of the cultivation of
-                silence and the practice of bringing the whole person — body,
-                mind, soul, imagination, and memory — to prayer. The word
-                “sadhana” is a capacious Indian term rich in meanings. It can
-                refer to discipline, spiritual practice, and one’s personal
-                means for approaching God. De Mello has created 47 exercises
-                drawing on Scripture; St. Ignatius, Teresa of Avila, and other
-                mystics; modern psychology; and Eastern techniques such as yoga
-                and Zen Buddhism.
-              </p>
+              <div className="h-[65vh] overflow-y-auto">
+                <p className="px-2 my-0  text-base">
+                  Sadhana refers to the process of mastering (saadh-ne-ko)
+                  senses, Sadhana is not a particular aspect of life but it’s an
+                  act of continuous nurturing of both internal and external due
+                  to absolute devotion towards own will. Human nature needs
+                  dynamism, some movement in life for betterment within and
+                  outside of himself without that he feels frustrated. He must
+                  keep moving to newer and newer possibilities. Sadhana is that
+                  which facilitates that.
+                </p>
+                <p className="px-2 my-0 text-base">
+                  Every action can be sadhana, if done with absolute will &
+                  nature, it will promote you towards your enrichment. Sadhana
+                  does not mean any specific kind of activity such as spiritual
+                  ritual, sadhana means you are mastering your action as a tool
+                  for your wellbeing.
+                </p>
+                <p className="px-2 my-0 text-base">
+                  Spiritual director and retreat leader Anthony de Mello in the
+                  path breaking book speaks boldly in favour of the cultivation
+                  of silence and the practice of bringing the whole person —
+                  body, mind, soul, imagination, and memory — to prayer. The
+                  word “sadhana” is a capacious Indian term rich in meanings. It
+                  can refer to discipline, spiritual practice, and one’s
+                  personal means for approaching God. De Mello has created 47
+                  exercises drawing on Scripture; St. Ignatius, Teresa of Avila,
+                  and other mystics; modern psychology; and Eastern techniques
+                  such as yoga and Zen Buddhism.
+                </p>
+              </div>
             </div>
-            <div id='about'>
-            <img className="h-full w-full my-2" src="/images/sadhana.jpg" />
+            <div id="about">
+              <img className="h-full w-full my-2" src="/images/sadhana.jpg" />
             </div>
           </div>
-                 <div className='grid grid-cols-[50%_50%] text-xl bg-[#c8934a] text-black px-5 py-5 mx-5 my-3'>
-              <div className=''>
-            <span className="font-semibold text-3xl pl-1.5 text-gray-800">
+          <div
+            id="about-main"
+            className="grid grid-cols-[50%_50%] h-[calc(100vh-80px)]  text-xl bg-[#c8934a] text-black px-5 py-5 mx-5 my-3"
+          >
+            <div className="">
+              <span className="font-semibold text-3xl pl-1.5 text-gray-800">
                 ANCIENT CULTURE AND SCIENCE
               </span>
-              <p className="px-2 py-2 text-base">
-                Ancient science which could not be preserved has a lot of such
-                information, which science has now started admitting. Science
-                now admits that body cells regenerate and replace old cells on
-                their own and it is an inbuilt auto process. The Nobel Prize in
-                Physiology was awarded to Yoshinori Ohsumi “for his discoveries
-                of mechanisms for autophagy, which confirmed that a major
-                percentage of protein needed by the body is being generated by
-                the body itself by using those dead cells”.
-              </p>
-              <p className="px-2 py-2 text-base">
-                Significant improvements and research in science has assisted
-                humankind in increasing their life span. But still there are lot
-                of questions, which are beyond the limitations of science and
-                remain unanswered.
-              </p>
-              <p className="m-0 px-2 py-2 text-base">
-                We believe that human body is the biggest gift provided by
-                almighty to humankind, which cannot be valued. Birth and death
-                are still controlled by the almighty, or else the richest
-                people, the biggest doctors, the biggest scientist, the
-                strongest person would have never died.
-              </p>
+              <div className="h-[65vh] overflow-y-auto">
+                <p className="px-2 my-0 text-base">
+                  Ancient science which could not be preserved has a lot of such
+                  information, which science has now started admitting. Science
+                  now admits that body cells regenerate and replace old cells on
+                  their own and it is an inbuilt auto process. The Nobel Prize
+                  in Physiology was awarded to Yoshinori Ohsumi “for his
+                  discoveries of mechanisms for autophagy, which confirmed that
+                  a major percentage of protein needed by the body is being
+                  generated by the body itself by using those dead cells”.
+                </p>
+                <p className="px-2 my-0 text-base">
+                  Significant improvements and research in science has assisted
+                  humankind in increasing their life span. But still there are
+                  lot of questions, which are beyond the limitations of science
+                  and remain unanswered.
+                </p>
+                <p className="m-0 px-2 my-0 text-base">
+                  We believe that human body is the biggest gift provided by
+                  almighty to humankind, which cannot be valued. Birth and death
+                  are still controlled by the almighty, or else the richest
+                  people, the biggest doctors, the biggest scientist, the
+                  strongest person would have never died.
+                </p>
               </div>
-              <div id='about'>
+            </div>
+            <div id="about">
               <img className="h-full w-full my-2" src="/images/ayur.jpg" />
+            </div>
+          </div>
+          <div
+            id="about-main"
+            className="grid grid-cols-[50%_50%] h-[calc(100vh-80px)]  px-5 py-5 text-black text-sm bg-[#8de1e983] mx-5 my-3"
+          >
+            <div>
+              <p className="font-semibold text-3xl pl-1.5 text-gray-800">
+                PURPOSE OF THIS WEBSITE
+              </p>
+              <div className="h-[65vh] overflow-y-auto">
+                <p className="px-2 mb-1 text-base ">
+                  This website is an effort by Maa Ambey Education and Welfare
+                  foundation, a nonprofit organization, to assist and increase
+                  awareness in humankind about health, human values and for
+                  living a better life by providing and compiling information
+                  from various sources, which can help them and assist them, in
+                  saving efforts and money
+                </p>{" "}
+                <p className="px-2 my-0 text-base ">
+                  If we are sick or have any physical or mental problems, value
+                  of money diminishes, as you cannot enjoy anything, if you are
+                  not physically and mentally fit. Value of good health is known
+                  only to people who are suffering with some ailment. Effort is
+                  this website is to assist humankind for better physical and
+                  mental health.
+                </p>
+                <p className="px-2 my-0 text-base">
+                  There are lot of other sciences, other than the conventional
+                  allopathic, which are effective and have lesser economic
+                  impact on individual. What to eat, how to lead a balanced
+                  life, exercise, yoga, home remedies, ayurveda, acupressure,
+                  acupuncture, homeopathy and other ancient methods which can
+                  assist humankind, prior trying allopathy. Effort is being made
+                  to collate such information in handy and precise manner, so
+                  that users can have easy access and save their time and money.
+                </p>
+                <p className="px-2 m-0 my-0 text-base">
+                  Allopathy is an outcome of lot of research and efforts, which
+                  should not be avoided, as it is result oriented, but other
+                  options can be tried prior taking help from allopathy. Trying
+                  other things will help because allopathy is expensive, it has
+                  side effects, it helps on one organ and have adverse impact on
+                  another organ. Moreover, allopathy medicines are generic in
+                  nature and effects on probabilities, while as almighty has not
+                  created every individual different from other.
+                </p>
               </div>
             </div>
-          <div className="grid grid-cols-[50%_50%] px-5 py-5 text-black text-sm bg-[#6bcbd4] mx-5 my-3">
-            <div>
-            <p className="font-semibold text-3xl pl-1.5 text-gray-800">
-              PURPOSE OF THIS WEBSITE
-            </p>
-            <p className="px-2 py-2">
-              This website is an effort by Maa Ambey Education and Welfare
-              foundation, a nonprofit organization, to assist and increase
-              awareness in humankind about health, human values and for living a
-              better life by providing and compiling information from various
-              sources, which can help them and assist them, in saving efforts
-              and money
-            </p>
-            <p className="px-2 py-2">
-              If we are sick or have any physical or mental problems, value of
-              money diminishes, as you cannot enjoy anything, if you are not
-              physically and mentally fit. Value of good health is known only to
-              people who are suffering with some ailment. Effort is this website
-              is to assist humankind for better physical and mental health.
-            </p>
-            <p className="px-2 py-2">
-              There are lot of other sciences, other than the conventional
-              allopathic, which are effective and have lesser economic impact on
-              individual. What to eat, how to lead a balanced life, exercise,
-              yoga, home remedies, ayurveda, acupressure, acupuncture,
-              homeopathy and other ancient methods which can assist humankind,
-              prior trying allopathy. Effort is being made to collate such
-              information in handy and precise manner, so that users can have
-              easy access and save their time and money.
-            </p>
-            <p className="px-2 py-2 m-0">
-              Allopathy is an outcome of lot of research and efforts, which
-              should not be avoided, as it is result oriented, but other options
-              can be tried prior taking help from allopathy. Trying other things
-              will help because allopathy is expensive, it has side effects, it
-              helps on one organ and have adverse impact on another organ.
-              Moreover, allopathy medicines are generic in nature and effects on
-              probabilities, while as almighty has not created every individual
-              different from other.
-            </p>
-            </div>
-            <div id='about'>
-              <img className='h-full w-full' src="/images/purpose.webp"/>
+            <div id="about">
+              <img className="h-full w-full" src="/images/purpose.webp" />
             </div>
           </div>
         </div>
