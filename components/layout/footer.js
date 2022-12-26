@@ -1,13 +1,13 @@
-import React from 'react';
-import AddIcCallIcon from '@mui/icons-material/AddIcCall';
-import InfoIcon from '@mui/icons-material/Info';
-import { Box } from '@mui/material';
-import { fontSize, margin, padding } from '@mui/system';
-import { Margin } from '@mui/icons-material';
+import React from "react";
+import AddIcCallIcon from "@mui/icons-material/AddIcCall";
+import InfoIcon from "@mui/icons-material/Info";
+import { Box } from "@mui/material";
+import { fontSize, margin, padding } from "@mui/system";
+import { Margin } from "@mui/icons-material";
 
 const Footer = () => {
   return (
-    <footer className=" lg:text-left bg-dropdown-bg text-white">
+    <footer className=" lg:text-left bg-[#000000] text-white">
       <>
         <div className="flex justify-center items-center lg:justify-between p-6 border-b border-gray-300">
           <div className="mr-12 hidden lg:block">
