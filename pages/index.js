@@ -1,20 +1,23 @@
-import AboutSection from '../components/home/about-section';
-import InfoSection from '../components/home/info-section';
-import Banner from '../components/multiusable/banner';
-import NewsLetter from '../components/multiusable/news-letter';
-import AboutUs from '../components/home/about-us';
-import MidSection from '../components/home/mid-section';
-import UpperFooter from '../components/layout/upper-footer';
-import DiagnoseDisease from './diagnose-disease';
-import AwarenessHome from '../components/home/awareness-home';
+import AboutSection from "../components/home/about-section";
+import InfoSection from "../components/home/info-section";
+import Banner from "../components/multiusable/banner";
+import NewsLetter from "../components/multiusable/news-letter";
+import AboutUs from "../components/home/about-us";
+import MidSection from "../components/home/mid-section";
+import UpperFooter from "../components/layout/upper-footer";
+import DiagnoseDisease from "./diagnose-disease";
+import AwarenessHome from "../components/home/awareness-home";
 
 export default function Home() {
   return (
     <div>
       <div>
-        <Banner image="/images/home-images/homepage.jpg" />
-        <div className='absolute top-[80px] h-24 w-full bg-amber-100 text-center'>  
-        <p className='text-black font-sans font-semibold text-xl md:text-4xl'>HUMAN BODY IS THE MOST SOPHISTICATED MACHINE GIFTED BY THE ALMIGHTY TO HUMANKIND</p>
+        <Banner image="/Images-new/Home/meditation-01-01.svg" />
+        <div className="absolute top-[80px] h-24 w-full bg-[#FFCF2E] flex items-center text-center">
+          <p className="text-black font-sans m-0 p-0 font-semibold text-xl md:text-4xl">
+            HUMAN BODY IS THE MOST SOPHISTICATED MACHINE GIFTED BY THE ALMIGHTY
+            TO HUMANKIND
+          </p>
         </div>
         {/* <div className="absolute h-[38vh] flex top-24 left-5 w-1/4 space-y-2">
           <div className="h-44 bg-red-600 bg-gradient-to-b from-red-600 via-pink-500 to-pink-600 sm:h-72 md:h-72"></div>
@@ -36,7 +39,8 @@ export default function Home() {
         <AwarenessHome />
         {/* <InfoSection /> */}
         {/* <AboutSection /> */}
-        <UpperFooter />
+        {/* <UpperFooter /> */}
+        <NewsLetter />
       </div>
     </div>
   );

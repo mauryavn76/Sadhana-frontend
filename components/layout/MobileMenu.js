@@ -35,12 +35,10 @@ export const MobileMenu = ({ isOpen, setIsOpen }) => {
     <>
       {!isOpen ? (
         <i
-          className="md:hidden fa-solid fa-bars"
+          className="lg:hidden fa-solid fa-bars float-right"
           onClick={() => setIsOpen(!isOpen)}
         ></i>
-      ) : (
-        <div></div>
-      )}
+      ) : null}
       <div
         className={`${
           isOpen ? "translate-x-0" : "translate-x-full"

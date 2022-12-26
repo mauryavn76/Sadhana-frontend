@@ -47,7 +47,7 @@ const Navbar = () => {
       className="flex top-0 items-center bg-black text-white md:justify-around justify-end px-16 sticky z-20"
       style={{ height: navHeight }}
     >
-      <div className="hidden md:block md:h-full">
+      <div className="hidden lg:block md:h-full">
         <ul className="flex h-full space-x-10 cursor-pointer">
           {nav.map((item) => {
             return (
@@ -73,15 +73,15 @@ const Navbar = () => {
           })}
         </ul>
       </div>
-      <div className="hidden md:flex items-center justify-between px-3 md:w-[20%] w-[70%] py-[5px] rounded-full bg-white">
+      {/* <div className="hidden md:flex items-center justify-between px-3 md:w-[20%] w-[70%] py-[5px] rounded-full bg-white">
         <input
           type="text"
           className="  h-full text-black w-[80%] outline-none"
           placeholder="Search..."
         />
         <SearchIcon className="text-black" />
-      </div>
-      <div className="hidden md:flex md:cursor-pointer md:text-xl md:space-x-5 md:text-dropdown-item-color">
+      </div> */}
+      <div className="hidden lg:flex md:cursor-pointer md:text-xl md:space-x-5 md:text-dropdown-item-color">
         <i className="fa-brands fa-facebook-f"></i>
         <i className="fa-brands fa-instagram"></i>
         <i className="fa-brands fa-twitter"></i>
