@@ -8,7 +8,7 @@ const Awareness = () => {
             <div className="flex justify-center items-center flex-col my-3">
               <img
                 src="images/awareness/lifestyle-01.svg"
-                className="w-[100%] h-[65vh]"
+                className="w-[100%] h-[70vh]"
               />
             </div>
             <p className="px-2 mb-1">
