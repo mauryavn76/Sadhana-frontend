@@ -35,7 +35,7 @@ export const MobileMenu = ({ isOpen, setIsOpen }) => {
     <>
       {!isOpen ? (
         <i
-          className="lg:hidden fa-solid fa-bars float-right"
+          className=" lg:hidden fa-solid fa-bars  "
           onClick={() => setIsOpen(!isOpen)}
         ></i>
       ) : null}
