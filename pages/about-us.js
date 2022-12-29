@@ -19,7 +19,7 @@ function About() {
                 <p className="font-semibold text-3xl text-center text-gray-800 mb-3 mt-3">
                   HUMAN BODY
                 </p>
-                <div className="h-full md:h-[65vh] overflow-y-auto">
+                <div className="h-96 my-2 md:h-[65vh] overflow-y-auto">
                   <p className="text-base my-0">
                     The Vedas (ancient Hindu Scriptures) state that the human
                     body is a miniature world!
@@ -58,7 +58,7 @@ function About() {
               </div>
               <div id="about" className="px-2 flex ">
                 <img
-                  className="h-72 md:h-full w-full my-2 flex justify-center items-center "
+                  className="h-72 md:h-full w-full my-2 md:my-0 flex justify-center items-center "
                   src="/images/about.svg"
                 />
               </div>
@@ -72,7 +72,7 @@ function About() {
               <span className="font-semibold text-3xl pl-1.5 text-gray-800 mt-3">
                 SADHANA
               </span>
-              <div className="h-full md:h-[65vh] overflow-y-auto">
+              <div className="h-96 my-5 md:h-[65vh] overflow-y-auto">
                 <p className=" my-3  text-base">
                   Sadhana refers to the process of mastering (saadh-ne-ko)
                   senses, Sadhana is not a particular aspect of life but it’s an
@@ -106,7 +106,7 @@ function About() {
             </div>
             <div id="about">
               <img
-                className="h-96 md:h-full w-full my-2 flex justify-center items-center "
+                className="h-72 md:h-full w-full my-0 md:my-2 flex justify-center items-center "
                 src="/images/sadhana.jpg"
               />
             </div>
@@ -116,10 +116,10 @@ function About() {
             className="flex flex-col md:grid grid-cols-[50%_50%] bg-[#36bcaf] h-full md:h-[calc(100vh-80px)] px-2 text-black mx-5 my-3"
           >
             <div className="text-sm px-8 md:py-5">
-              <span className="font-semibold text-3xl pl-1.5 text-gray-800 mt-3">
+              <span className="font-semibold text-3xl pl-1.5 text-gray-800 mt-5">
                 ANCIENT CULTURE AND SCIENCE
               </span>
-              <div className="h-full md:h-[65vh] overflow-y-auto">
+              <div className="h-96 my-5  md:h-[65vh] overflow-y-auto">
                 <p className="px-2 my-0 text-base">
                   Ancient science which could not be preserved has a lot of such
                   information, which science has now started admitting. Science
@@ -146,7 +146,10 @@ function About() {
               </div>
             </div>
             <div id="about">
-              <img className="h-full w-full my-2" src="/images/ayur.jpg" />
+              <img
+                className="h-72 md:h-full w-full my-0 md:my-2 flex justify-center items-center "
+                src="/images/ayur.jpg"
+              />
             </div>
           </div>
           <div
@@ -154,10 +157,10 @@ function About() {
             className="flex flex-col md:grid grid-cols-[50%_50%] bg-[#36bcaf] h-full md:h-[calc(100vh-80px)] px-2 text-black mx-5 my-3"
           >
             <div className="text-sm px-8 md:py-5">
-              <p className="font-semibold text-3xl pl-1.5 text-gray-800">
+              <p className="font-semibold text-3xl pl-1.5 text-gray-800 mt-3">
                 PURPOSE OF THIS WEBSITE
               </p>
-              <div className="h-[65vh] overflow-y-auto">
+              <div className="h-96 my-5 md:h-[65vh] overflow-y-auto">
                 <p className="px-2 mb-1 text-base ">
                   This website is an effort by Maa Ambey Education and Welfare
                   foundation, a nonprofit organization, to assist and increase
@@ -197,7 +200,10 @@ function About() {
               </div>
             </div>
             <div id="about">
-              <img className="h-full w-full my-2" src="/images/purpose.webp" />
+              <img
+                className="h-72 md:h-full w-full my-0 md:my-4 flex justify-center items-center "
+                src="/images/purpose.webp"
+              />
             </div>
           </div>
         </div>
