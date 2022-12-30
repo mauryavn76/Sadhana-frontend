@@ -1,7 +1,7 @@
 export const AwarenessData = [
   {
     img: "images/awareness/lifestyle-01.svg",
-    bgColor: "bg-[#e9edef]",
+    bgColor: "#e9edef",
     title: "Nutrition",
     para: [
       "Is your body getting nutrients needed? what are sources for vitamins and how much you need in your diet? Taking too many vitamins can be unhealthy and even dangerous. Find out how to besure youre getting the right amount",
@@ -10,7 +10,7 @@ export const AwarenessData = [
   },
   {
     img: "images/awareness/Nutrition 2-01.svg",
-    bgColor: "bg-[#aadeda]",
+    bgColor: "#aadeda",
     title: "Lifestyle",
     para: [
       "A lot of times people think healthy lifestyles are about foodonly. Its not just food its a multiplicity ofthings. Which includes following.",
@@ -20,7 +20,7 @@ export const AwarenessData = [
   },
   {
     img: "images/awareness/yoga & exercise-01.svg",
-    bgColor: "bg-[#baedf4]",
+    bgColor: "#baedf4",
     title: "Yoga & Exercise",
     para: [
       "Yoga and exercise help in improving physical and mental health for people of all ages. Yoga can help in recovering patients and for patients with chronic condition it can become part of treatment potentially help in healing. Slow movements and deep breathing increase blood flow and warm up muscles while holding a pose can build strength. Yoga improves strength balance and flexibility. It helps in muscle pains ease arthritis symptoms healthy heart and relaxes for better sleep",
@@ -38,7 +38,7 @@ export const AwarenessData = [
   },
   {
     img: "images/awareness/home remedies-01-01.svg",
-    bgColor: "bg-[#d3cab7]",
+    bgColor: "#d3cab7",
     title: "Home Remedies",
     para: [
       "History of using plant resources for treating diseases can be dated back to 6000 to 4000 BCE the Buddhist period. AYM has a vast literature in Sanskrit and various Indian languages coveringvarious aspects of diseases therapeutics and pharmacy",
@@ -47,7 +47,7 @@ export const AwarenessData = [
   },
   {
     img: "images/awareness/Acupuncture-01.svg",
-    bgColor: "bg-[#e2d7bf]",
+    bgColor: "#d3cab7",
     title: " Naturopathy/ Acupressure/ Acupuncture",
     para: [
       " Basic principals of nature cure are – body heals by itself. Main cause of disease is enervation. Deposit of metabolic end-products in the body is disease. Acute disease is a remedial process – itself a cure. Food is building material does not increase vitality. Fasting provides an opportunity to the body to heal itself. Exercise or physical activity keeps the balance between nutrition and drainage. External treatments whether natural allopathic ayurvedic or homeopathy – give only relief do not cure. Patients own will to get well determination and faith are necessary things for nature cure.",
@@ -55,7 +55,7 @@ export const AwarenessData = [
   },
   {
     img: "images/awareness/ayurveda-01-01.svg",
-    bgColor: "bg-[#d3ebf3]",
+    bgColor: "#d3ebf3",
     title: "Ayurveda",
     para: [
       "  Ayurveda believes that the entire universe is composed of five elements: Vayu (Air) Jala (Water) Aakash (Space or ether) Prithvi (Earth) and Teja (Fire). These five elements (referred to as Pancha Mahabhoota in Ayurveda) are believed to form the three basic humors of human body in varying combinations. They developed Ayurveda as a science to balance these elements in our bodies",
@@ -64,7 +64,7 @@ export const AwarenessData = [
   },
   {
     img: "images/awareness/homeopathy-01.svg",
-    bgColor: "bg-[#d3ebf3] ",
+    bgColor: "#d3ebf3 ",
     title: "Homeopathy",
     para: [
       "The homoeopathic system of medicine is one of the finest systems of cure available to mankind. It achieves in totality the ideal laid down by its originator Dr. Samuel Hahnemann. The highest ideal of cure is rapid gentle and permanent restoration of the health or removal and annihilation of the disease in its whole extent in the shortest most reliable and most harmless way on easily comprehensible principles",

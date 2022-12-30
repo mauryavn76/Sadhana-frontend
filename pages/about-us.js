@@ -15,7 +15,8 @@ function About() {
             return (
               <div
                 id="about-main"
-                className={`${data.background} flex flex-col lg:grid grid-cols-[50%_50%]  h-full xl:h-[calc(100vh-80px)] px-2 text-black my-3`}
+                style={{ background: `${data.background}` }}
+                className="flex flex-col lg:grid grid-cols-[50%_50%]  h-full xl:h-[calc(100vh-80px)] px-2 text-black my-3"
               >
                 <div className="text-sm px-4  md:py-5">
                   <p className="font-semibold text-3xl  text-gray-800 mb-3 mt-3">
