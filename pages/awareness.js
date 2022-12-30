@@ -3,7 +3,7 @@ import { AwarenessData } from "../data/awarenessData";
 const Awareness = () => {
   return (
     <div className="flex justify-center">
-      <div className="w-[90%] xl:w-[80%]  mt-10">
+      <div className="w-[90%] xl:w-[90%]  mt-10">
         <div className="flex flex-col gap-3">
           {AwarenessData.map((data) => {
             return (
