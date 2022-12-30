@@ -36,12 +36,10 @@ export const MobileMenu = ({ isOpen, setIsOpen }) => {
   return (
     <>
       {!isOpen ? (
-        <div className="flex flex-col justify-end w-full">
-          <i
-            className="lg:hidden fa-solid fa-bars w-fit"
-            onClick={() => setIsOpen(!isOpen)}
-          ></i>
-        </div>
+        <i
+          className=" lg:hidden fa-solid fa-bars  "
+          onClick={() => setIsOpen(!isOpen)}
+        ></i>
       ) : null}
       <div
         className={`${

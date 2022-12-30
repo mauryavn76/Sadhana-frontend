@@ -44,7 +44,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="flex top-0 items-center bg-black text-white md:justify-around justify-end px-16 sticky z-20"
+      className="flex top-0  items-center  bg-black text-white lg:justify-around justify-end px-16 sticky z-20"
       style={{ height: navHeight }}
     >
       <div className="hidden lg:block md:h-full">
