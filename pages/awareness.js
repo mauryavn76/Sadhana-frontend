@@ -1,13 +1,17 @@
-import { AwarenessData } from "../data/awarenessData";
+import { AwarenessData } from '../data/awarenessData';
 
 const Awareness = () => {
   return (
     <div className="flex justify-center">
       <div className="w-[90%] xl:w-[90%] mt-10">
         <div className="flex flex-col gap-3">
-          {AwarenessData.map((data) => {
+          {AwarenessData.map((data, i) => {
             return (
-              <div style={{ background: `${data.bgColor}` }} className="p-4">
+              <div
+                key={i}
+                style={{ background: `${data.bgColor}` }}
+                className="p-4"
+              >
                 <span className="text-3xl  font-semibold my-2">
                   {data.title}
                 </span>
@@ -20,8 +24,12 @@ const Awareness = () => {
                   </div>
                 </div>
                 <div className="md:h-full h-[40vh]  overflow-auto">
-                  {data.para.map((p) => {
-                    return <p className=" px-2 mb-1">{p}</p>;
+                  {data.para.map((p, k) => {
+                    return (
+                      <p key={k} className=" px-2 mb-1">
+                        {p}
+                      </p>
+                    );
                   })}
                 </div>
                 <button className="bg-red-400 mt-4 float-right text-xs text-white font-sans px-2 py-2 lg:text-xl">

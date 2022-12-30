@@ -1,20 +1,20 @@
-import AboutSection from "../components/home/about-section";
-import InfoSection from "../components/home/info-section";
-import Banner from "../components/multiusable/banner";
-import NewsLetter from "../components/multiusable/news-letter";
-import AboutUs from "../components/home/about-us";
-import MidSection from "../components/home/mid-section";
-import UpperFooter from "../components/layout/upper-footer";
-import DiagnoseDisease from "./diagnose-disease";
-import AwarenessHome from "../components/home/awareness-home";
+import AboutSection from '../components/home/about-section';
+import InfoSection from '../components/home/info-section';
+import Banner from '../components/multiusable/banner';
+import NewsLetter from '../components/multiusable/news-letter';
+import AboutUs from '../components/home/about-us';
+import MidSection from '../components/home/mid-section';
+import UpperFooter from '../components/layout/upper-footer';
+import DiagnoseDisease from './diagnose-disease';
+import AwarenessHome from '../components/home/awareness-home';
 
 export default function Home() {
   return (
     <div>
       <div>
         <Banner image="/Images-new/Home/sadhana-banner.jpg" />
-        <div className="absolute top-[80px] h-24 w-full bg-[#FFCF2E] flex items-center text-center">
-          <p className="text-black font-sans m-0 p-0 font-semibold text-xl md:text-4xl">
+        <div className="absolute top-[70px] h-24 w-full bg-[#FFCF2E] flex items-center text-center">
+          <p className="text-black font-sans m-0 p-0 font-semibold text-xl md:text-3xl">
             HUMAN BODY IS THE MOST SOPHISTICATED MACHINE GIFTED BY THE ALMIGHTY
             TO HUMANKIND
           </p>
