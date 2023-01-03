@@ -4,13 +4,13 @@ const Awareness = () => {
   return (
     <div className="flex justify-center">
       <div className="w-[90%] xl:w-[90%] mt-10">
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col">
           {AwarenessData.map((data, i) => {
             return (
               <div
                 key={i}
                 style={{ background: `${data.bgColor}` }}
-                className="p-4"
+                className="p-4 my-6"
               >
                 <span className="text-3xl  font-semibold my-2">
                   {data.title}
@@ -23,7 +23,7 @@ const Awareness = () => {
                     />
                   </div>
                 </div>
-                <div className="md:h-full h-[40vh]  overflow-auto">
+                <div className="md:h-full h-[40vh] overflow-auto">
                   {data.para.map((p, k) => {
                     return (
                       <p key={k} className=" px-2 mb-1">
