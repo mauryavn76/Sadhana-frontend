@@ -1,105 +1,69 @@
-import React, { useLayoutEffect, useEffect, useRef, useState } from 'react';
-import { AboutData } from '../data/aboutData';
-import {motion, useAnimation} from 'framer-motion'
+// import React, { useLayoutEffect, useEffect, useRef, useState } from 'react';
+import { request } from '../utils/request';
 
-function About() {
-
-  const controls = useAnimation();
-  const rootRef = useRef();
-  const onScreen = useOnScreen(rootRef);
-
- useEffect(() => {
-    if (onScreen) {
-      controls.start({
-        x: 0,
-        opacity: 1,
-        transition: {
-          duration: 0.7,
-          ease: "easeOut"
-        }
-      });
+const ABOUT_QUERY = `query MyQuery {
+  aboutpage {
+    mainImage {
+      url
     }
-  }, [onScreen, controls]);
-
-  function useOnScreen(ref, rootMargin = '0px') {
-  const [isIntersecting, setIntersecting] = useState(false);
-
-  useLayoutEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIntersecting(entry.isIntersecting);
-      },
-      {
-        rootMargin
+    aboutSection {
+      background {
+        hex
       }
-    );
-    if (ref.current) {
-      observer.observe(ref.current);
+      title
+      content
     }
-    return () => {
-      observer.unobserve(ref.current);
-    };
-  }, []);
-
-  return isIntersecting;
+  }
+}`;
+export async function getStaticProps() {
+  const data = await request({
+    query: ABOUT_QUERY,
+    variables: { limit: 10 },
+  });
+  return {
+    props: { data },
+  };
 }
+
+export default function About({ data }) {
+  console.log(data, 'ffffffffffff');
   return (
-    <>
+    <div>
+      {/* {JSON.stringify(data, null, 2)} */}
       <div className="h-full w-full flex justify-center items-center flex-col">
         <img
           className="w-full h-[calc(100vh-80px)] hidden md:block "
-          src="/images/new-about.jpg"
+          src={data.aboutpage.mainImage.url}
         />
-        {/* <p className="underline text-3xl font-semibold">About Us</p> */}
-        <motion.div
-             ref={rootRef}
-            initial={{ opacity: 0, x: -5 }}
-             animate={controls}
-         className="flex flex-col items-center w-full xl:w-full ">
-          {AboutData.map((data, a) => {
-            return (
-              <div
-                key={a}
-                id="about-main"
-                style={{ background: `${data.background}` }}
-                className="flex flex-col lg:grid grid-cols-[50%_50%]  h-full xl:h-[calc(100vh-80px)] px-2 text-blackp"
-              >
-                <div className="text-sm px-4 md:py-5">
-                  <p className="font-semibold text-3xl  text-gray-800 mb-3 mt-3">
-                    {data.title}
+        <div className="flex flex-col items-center w-full xl:w-full ">
+          <div
+            id="about-main"
+            // style={{ background: `${data.about.addBackground.hex}` }}
+            className="flex flex-col lg:grid grid-cols-[50%_50%] h-full xl:h-[calc(100vh-80px)] px-2 text-blackp"
+          >
+            <div className="text-sm px-4 md:py-5">
+              {data.aboutpage.aboutSection.map((ind) => {
+                return (
+                  <p className="font-semibold text-base text-gray-600 mb-3 mt-3">
+                    {ind.content}
                   </p>
-                  <motion.div
-                     ref={rootRef}
-                     initial={{ opacity: 0, x: -10 }}
-                     animate={controls}
-                   className="h-96 my-2 md:h-[60vh] overflow-y-auto">
-                    {data.paras.map((p, d) => {
-                      return (
-                        <motion.div
-                            key={d} className="text-base my-0">
-                            {p}
-                        </motion.div>
-                      );
-                    })}
-                  </motion.div>
+                );
+              })}
+              <div className="h-96 my-2 md:h-[60vh] overflow-y-auto">
+                <div className="text-base my-0 text-black">
+                  {/* {data.about.addContent} */}
                 </div>
-                <motion.div
-                     ref={rootRef}
-                            initial={{ opacity: 0, x: -5 }}
-                            animate={controls}
-                 id="about" className="px-2 flex ">
-                  <img
-                    className="h-72 lg:h-full w-full md:my-0 flex justify-center items-center border-none"
-                    src={data.img}
-                  />
-                </motion.div>
               </div>
-            );
-          })}
-        </motion.div>
+            </div>
+            <div id="abou" className="px-2 flex ">
+              <img
+                // src={data.about.addImage[0].url}
+                className="h-72 lg:h-full w-full md:my-0 flex justify-center items-center border-none"
+              />
+            </div>
+          </div>
+        </div>
       </div>
-    </>
+    </div>
   );
 }
-
-export default About;

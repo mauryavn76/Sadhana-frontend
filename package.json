@@ -11,6 +11,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@datocms/cli": "^1.0.21",
     "@editorjs/delimiter": "^1.2.0",
     "@editorjs/editorjs": "^2.22.1",
     "@editorjs/embed": "^2.4.6",
@@ -47,7 +48,7 @@
     "framer-motion": "^6.5.1",
     "google-maps-react": "^2.0.6",
     "graphql": "^16.6.0",
-    "graphql-request": "^5.0.0",
+    "graphql-request": "^5.1.0",
     "isomorphic-dompurify": "^0.22.0",
     "json-server": "^0.17.0",
     "jwt-decode": "^3.1.2",
