@@ -34,7 +34,7 @@ export const AboutData = [
   {
     title: 'PURPOSE OF THIS WEBSITE',
     img: '/images/purpose.jpg',
-    background: '#8de1e983',
+    background: '#a8fdea',
     paras: [
       'This website is an effort by Maa Ambey Education and Welfare foundation, a nonprofit organization, to assist and increase awareness in humankind about health, human values and for living a better life by providing and compiling information from various sources, which can help them and assist them, in saving efforts and money',
       'If we are sick or have any physical or mental problems, value of money diminishes, as you cannot enjoy anything, if you are not physically and mentally fit. Value of good health is known only to people who are suffering with some ailment. Effort is this website is to assist humankind for better physical and mental health.',
