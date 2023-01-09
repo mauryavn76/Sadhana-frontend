@@ -1,5 +1,7 @@
 // import React, { useLayoutEffect, useEffect, useRef, useState } from 'react';
 import { request } from '../utils/request';
+import { useState } from 'react';
+import { useAutoAnimate } from '@formkit/auto-animate/react';
 
 const ABOUT_QUERY = `query MyQuery {
   aboutpage {
@@ -28,14 +30,31 @@ export async function getStaticProps() {
   };
 }
 
+const ReadMore = ({ children }) => {
+  const text = children;
+  const [isReadMore, setIsReadMore] = useState(true);
+  const toggleReadMore = () => {
+    setIsReadMore(!isReadMore);
+  };
+  return (
+    <p className="text">
+      {isReadMore ? text.slice(0, 750) : text}
+      <span ref={parent} onClick={toggleReadMore} className="read-or-hide">
+        {isReadMore ? '...read more' : ' show less'}
+      </span>
+    </p>
+  );
+};
+
 export default function About({ data }) {
-  console.log(data, 'ffffffffffff');
+  // console.log(data, 'ffffffffffff');
+  const [parent, enableAnimations] = useAutoAnimate(/* optional config */);
   return (
     <div>
       {/* {JSON.stringify(data, null, 2)} */}
       <div className="h-full w-full flex justify-center items-center flex-col">
         <img
-          className="w-full h-[calc(100vh-80px)] hidden md:block "
+          className="w-full h-full hidden md:block "
           src={data.aboutpage.mainImage.url}
         />
         <div className="flex flex-col items-center w-full xl:w-full ">
@@ -48,10 +67,10 @@ export default function About({ data }) {
               >
                 <div className="text-sm px-4 md:py-5">
                   <h3>{ind.title}</h3>
-                  <div className="h-96 my-2 md:h-[60vh] overflow-y-auto">
-                    <div className="text-base my-0 text-black">
-                      <p className="font-semibold text-base text-gray-600 mb-3 mt-3">
-                        {ind.content}
+                  <div className="h-96 my-2 md:h-[60vh]">
+                    <div ref={parent} className="text-base my-0 text-black">
+                      <p className="font-semibold text-base text-gray-800 mb-3 mt-3 text-justify">
+                        <ReadMore>{ind.content}</ReadMore>
                       </p>
                     </div>
                   </div>
