@@ -12,6 +12,9 @@ const ABOUT_QUERY = `query MyQuery {
       }
       title
       content
+      image{
+        url
+      }
     }
   }
 }`;
@@ -44,8 +47,8 @@ export default function About({ data }) {
                 className="flex flex-col lg:grid grid-cols-[50%_50%] h-full xl:h-[calc(100vh-80px)] px-2 text-blackp"
               >
                 <div className="text-sm px-4 md:py-5">
+                  <h3>{ind.title}</h3>
                   <div className="h-96 my-2 md:h-[60vh] overflow-y-auto">
-                    <h3>{ind.title}</h3>
                     <div className="text-base my-0 text-black">
                       <p className="font-semibold text-base text-gray-600 mb-3 mt-3">
                         {ind.content}
@@ -54,7 +57,7 @@ export default function About({ data }) {
                   </div>
                 </div>
                 <div id="abou" className="px-2 flex ">
-                  <img src={ind.image.url} />
+                  <img src={ind.image?.url} />
                 </div>
               </div>
             );
