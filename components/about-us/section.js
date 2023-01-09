@@ -1,4 +1,5 @@
-import Image from 'next/image';
+import Image from "next/image";
+
 const Section = ({ img, title, para, isRight }) => {
   return isRight ? (
     <div className=" flex flex-col justify-center bg-white text-blue-400 px-10 lg:px-25  py-10 lg:flex-row text-2xl">

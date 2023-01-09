@@ -2,12 +2,12 @@ import Image from "next/image";
 
 const Banner = ({ image }) => {
   return (
-    <div className="lg:h-[calc(100vh-80px)] h-[350px] w-full relative">
-      <Image
+    <div className="w-full relative">
+      <img
         src={image}
         // height="100%"
         // width="100%"
-        layout="fill"
+        // layout="fill"
         // fill
         // objectFit="cover"
         // width={1200}

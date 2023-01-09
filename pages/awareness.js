@@ -1,4 +1,4 @@
-import { AwarenessData } from '../data/awarenessData';
+import { AwarenessData } from "../data/awarenessData";
 
 const Awareness = () => {
   return (
@@ -15,15 +15,15 @@ const Awareness = () => {
                 <span className="text-3xl  font-semibold my-2">
                   {data.title}
                 </span>
-                <div className="flex justify-center items-center flex-col md:my-3 my-0">
-                  <div>
+                <div className="flex justify-center items-center  flex-col md:my-3 my-0">
+                  <div className="mb-3">
                     <img
                       src={data.img}
                       className=" md:w-[100%] md:h-[70vh] h-[30vh]"
                     />
                   </div>
                 </div>
-                <div className="md:h-full h-[40vh] overflow-auto">
+                <div className="md:h-full h-[40vh] text-justify overflow-auto">
                   {data.para.map((p, k) => {
                     return (
                       <p key={k} className=" px-2 mb-1">

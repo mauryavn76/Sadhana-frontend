@@ -1,5 +1,6 @@
-import React from 'react';
-import { AboutData } from '../data/aboutData';
+import React from "react";
+import { AboutData } from "../data/aboutData";
+import ReadMoreReact from "read-more-react";
 
 function About() {
   return (
@@ -22,8 +23,14 @@ function About() {
                 <div className="text-sm px-4 md:py-5">
                   <p className="font-semibold text-3xl  text-gray-800 mb-3 mt-3">
                     {data.title}
+                    {/* <ReadMoreReact
+                      min={40}
+                      ideal={50}
+                      max={100}
+                      readMoreText="read more"
+                    /> */}
                   </p>
-                  <div className="h-96 my-2 md:h-[60vh] overflow-y-auto">
+                  <div className="h-96 my-2 md:h-[60vh] text-justify overflow-y-auto">
                     {data.paras.map((p, d) => {
                       return (
                         <p key={d} className="text-base my-0">
