@@ -13,7 +13,7 @@ const ABOUT_QUERY = `query MyQuery {
         hex
       }
       title
-      content
+      content(markdown: true)
       image{
         url
       }
@@ -63,14 +63,18 @@ export default function About({ data }) {
               <div
                 id="about-main"
                 style={{ background: `${ind.background.hex}` }}
-                className="flex flex-col lg:grid grid-cols-[50%_50%] h-full md:h-full lg:h-full px-2 text-black lg:py-16 "
+                className="flex flex-col lg:grid grid-cols-[50%_50%] h-full md:h-full lg:h-full px-2 text-black"
               >
                 <div className="text-sm px-4 py-3 md:py-10">
                   <h3 className="text-bold underline">{ind.title}</h3>
                   <div className="h-full my-2 md:h-[71%] overflow-y-auto">
                     <div ref={parent} className="text-base my-0 text-black">
                       <p className="md:text-sm lg:text-lg text-base font-medium text-gray-800 mb-3 mt-3 text-justify">
-                        <ReadMore>{ind.content}</ReadMore>
+                        <div
+                          dangerouslySetInnerHTML={{
+                            __html: ind.content,
+                          }}
+                        />
                       </p>
                     </div>
                   </div>
@@ -79,7 +83,7 @@ export default function About({ data }) {
                   id="about"
                   className="px-2 lg:py-10 py-3 lg:flex flex justify-center"
                 >
-                  <img className="" src={ind.image?.url} />
+                  <img src={ind.image?.url} />
                 </div>
               </div>
             );
