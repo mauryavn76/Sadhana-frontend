@@ -38,8 +38,8 @@ const ReadMore = ({ children }) => {
   };
   return (
     <p className="text">
-      {isReadMore ? text.slice(0, 750) : text}
-      <span ref={parent} onClick={toggleReadMore} className="read-or-hide">
+      {isReadMore ? text.slice(0, 575) : text}
+      <span onClick={toggleReadMore} className="read-or-hide" id="read-more">
         {isReadMore ? '...read more' : ' show less'}
       </span>
     </p>
@@ -63,20 +63,23 @@ export default function About({ data }) {
               <div
                 id="about-main"
                 style={{ background: `${ind.background.hex}` }}
-                className="flex flex-col lg:grid grid-cols-[50%_50%] h-full xl:h-[calc(100vh-80px)] px-2 text-blackp"
+                className="flex flex-col lg:grid grid-cols-[50%_50%] h-full md:h-full lg:h-full px-2 text-black lg:py-16 "
               >
-                <div className="text-sm px-4 md:py-5">
-                  <h3>{ind.title}</h3>
-                  <div className="h-96 my-2 md:h-[60vh]">
+                <div className="text-sm px-4 py-3 md:py-10">
+                  <h3 className="text-bold underline">{ind.title}</h3>
+                  <div className="h-full my-2 md:h-[71%] overflow-y-auto">
                     <div ref={parent} className="text-base my-0 text-black">
-                      <p className="font-semibold text-base text-gray-800 mb-3 mt-3 text-justify">
+                      <p className="md:text-sm lg:text-lg text-base font-medium text-gray-800 mb-3 mt-3 text-justify">
                         <ReadMore>{ind.content}</ReadMore>
                       </p>
                     </div>
                   </div>
                 </div>
-                <div id="abou" className="px-2 flex ">
-                  <img src={ind.image?.url} />
+                <div
+                  id="about"
+                  className="px-2 lg:py-10 py-3 lg:flex flex justify-center"
+                >
+                  <img className="" src={ind.image?.url} />
                 </div>
               </div>
             );

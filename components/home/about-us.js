@@ -7,7 +7,7 @@ const AboutUs = () => {
           src="Images-new/Home/home-section.svg"
         />
       </div>
-      <div className="bg-[#FFCF2E] h-full font-medium text-md p-4">
+      <div className="bg-[#36bcaf] h-full font-medium text-md p-4 rounded-xl">
         <p>
           Ancient science which could not be preserved, has a lot of such
           information, which science has now started admitting. Science now
@@ -32,11 +32,10 @@ const AboutUs = () => {
           you.
         </p>
         <div>
-          <button className="bg-red-600 float-right text-xs text-white rounded-md lg:px-5 lg:py-2 lg:text-xl">
-            Know More
-          </button>
+          <button id="btn-grad">Know More</button>
         </div>
       </div>
+      {/* className="float-right text-xs rounded-md lg:px-5 lg:py-2 lg:text-xl" */}
     </div>
   );
 };
