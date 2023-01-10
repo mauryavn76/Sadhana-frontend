@@ -31,7 +31,7 @@ export async function getStaticProps() {
 }
 
 export default function Awareness({ dataa }) {
-  console.log(dataa, 'bdjewjdjnewsydebbydw');
+  // console.log(dataa, 'bdjewjdjnewsydebbydw');p
   return (
 <<<<<<< HEAD
     <div className="flex justify-center">

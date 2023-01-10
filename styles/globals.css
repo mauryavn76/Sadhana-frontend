@@ -327,3 +327,15 @@ th {
   transform: scale(0.8);
   transition: 1s ease;
 }
+.text{
+  display: inline;
+  width: 100%;
+}
+
+.read-or-hide{
+  color: blue;
+  cursor: pointer;
+}
+.read-or-hide:hover{
+  text-decoration: underline;
+}
