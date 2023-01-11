@@ -47,7 +47,6 @@ const ReadMore = ({ children }) => {
 };
 
 export default function About({ data }) {
-  // console.log(data, 'ffffffffffff');
   return (
     <>
       <div className="h-full w-full flex justify-center items-center flex-col">
