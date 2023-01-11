@@ -29,13 +29,13 @@ export async function getStaticProps() {
 export default function Awareness({ dataa }) {
   return (
     <div>
-      {dataa.awarenesspage.awarenessSection.map((con, i) => {
+      {dataa.awarenesspage.awarenessSection.map((con, k) => {
         return (
           <div className="flex justify-center items-center flex-col">
             <div className="w-[90%] xl:w-[90%] mt-10">
               <div className="flex flex-col">
                 <div
-                  key={i}
+                  key={k}
                   style={{ background: `${con.background.hex}` }}
                   className="p-4 my-6"
                 >
