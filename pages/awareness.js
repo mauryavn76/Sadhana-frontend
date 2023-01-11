@@ -27,7 +27,6 @@ export async function getStaticProps() {
 }
 
 export default function Awareness({ dataa }) {
-  // console.log(dataa, 'bdjewjdjnewsydebbydw');p
   return (
     <div>
       {dataa.awarenesspage.awarenessSection.map((con, i) => {
