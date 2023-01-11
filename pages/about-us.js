@@ -52,13 +52,14 @@ export default function About({ data }) {
     <>
       <div className="h-full w-full flex justify-center items-center flex-col">
         <img
-          className="w-full h-[calc(100vh-80px)] hidden md:block "
+          className="w-full h-full hidden md:block "
           src={data.aboutpage.mainImage.url}
         />
         <div className="flex flex-col items-center w-full xl:w-full ">
-          {data.aboutpage.aboutSection.map((ind) => {
+          {data.aboutpage.aboutSection.map((ind, i) => {
             return (
               <div
+                key={i}
                 id="about-main"
                 style={{ background: `${ind.background.hex}` }}
                 className="flex flex-col lg:grid grid-cols-[50%_50%]  h-full xl:h-[calc(100vh-80px)] px-2 text-black"
