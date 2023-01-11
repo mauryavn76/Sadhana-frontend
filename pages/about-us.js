@@ -20,7 +20,7 @@ const ABOUT_QUERY = `query MyQuery {
     }
   }
 }`;
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const data = await request({
     query: ABOUT_QUERY,
     variables: { limit: 10 },

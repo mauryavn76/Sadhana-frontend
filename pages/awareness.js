@@ -10,13 +10,13 @@ const AWARENESS_QUERY = `query MyQuery {
       image {
         url
       }
-      content
+      content(markdown: true)
     }
   }
 }
 `;
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const dataa = await request({
     query: AWARENESS_QUERY,
     variables: { limit: 10 },
@@ -50,7 +50,14 @@ export default function Awareness({ dataa }) {
                     </div>
                   </div>
                   <div className="md:h-full h-[40vh] overflow-auto">
-                    <p className=" px-2 mb-1">{con.content}</p>
+                    <p className=" px-2 mb-1">
+                      <div
+                        className="text-base my-0 text-justify"
+                        dangerouslySetInnerHTML={{
+                          __html: con.content,
+                        }}
+                      />
+                    </p>
                   </div>
                   <button className="bg-red-400 mt-4 float-right text-xs text-white font-sans px-2 py-2 lg:text-xl">
                     Know More
