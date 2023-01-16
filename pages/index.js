@@ -12,9 +12,9 @@ export default function Home() {
   return (
     <div>
       <div>
-        <Banner image="/Images-new/Home/sadhana-banner.jpg" />
+        <Banner image="/images/home-images/homebanner1.jpg" />
         <div className="absolute top-[70px] h-24 w-full bg-gray-200 bg-opacity-50 flex items-center text-center">
-          <p className="text-black font-sans m-0 p-0 font-semibold text-xl md:text-3xl">
+          <p className="text-black font-sans m-0 p-0 font-semibold text-xl md:text-3xl lg:text-4xl text-center">
             HUMAN BODY IS THE MOST SOPHISTICATED MACHINE GIFTED BY THE ALMIGHTY
             TO HUMANKIND
           </p>
