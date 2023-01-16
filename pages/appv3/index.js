@@ -21,16 +21,16 @@ const Appv3 = () => {
 
   const [imag, setImag] = useState([
     {
-      src: '/images/app/step 1-01.png',
+      src: '/images/app/step1.png',
     },
     {
-      src: '/images/app/step 2-01-01.png',
+      src: '/images/app/step2.png',
     },
     {
-      src: '/images/app/step 3-01.png',
+      src: '/images/app/step3.png',
     },
     {
-      src: '/images/app/step 4-01.png',
+      src: '/images/app/step4.png',
     },
   ]);
 
