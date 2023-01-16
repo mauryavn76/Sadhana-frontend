@@ -1,8 +1,8 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 const Banner = ({ image }) => {
   return (
-    <div className="lg:h-[calc(100vh-80px)] h-[350px] w-full relative">
+    <div className="lg:h-[650px] h-[350px] w-full relative">
       <Image
         src={image}
         // height="100%"

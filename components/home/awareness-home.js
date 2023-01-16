@@ -24,12 +24,11 @@ const AwarenessHome = () => {
             <li>Homeopathy</li>
           </ul>
           <div>
-            <button className="bg-red-400 text-xs text-white  lg:px-5 lg:py-2 lg:text-xl">
-              Know More
-            </button>
+            <button id="btn-grad1">Know More</button>
           </div>
         </div>
       </div>
+      {/* className="bg-red-400 text-xs text-white  lg:px-5 lg:py-2 lg:text-xl" */}
     </div>
   );
 };

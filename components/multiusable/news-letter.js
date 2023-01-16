@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const NewsLetter = () => {
   return (
@@ -7,7 +7,7 @@ const NewsLetter = () => {
         Connect with US
       </h1>
       <p className="text-center font-semibold">
-        Stay informed about the happenings at WWBG. Sign up now
+        Stay informed about the happenings at Sadhana. Sign up now
       </p>
       <div className="flex w-full justify-center h-14 flex-col sm:flex-row">
         <input
