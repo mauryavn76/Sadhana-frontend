@@ -67,9 +67,9 @@ export default function About({ data }) {
                   <p className="font-semibold text-3xl  text-gray-800 mb-3 mt-3">
                     {ind.title}
                   </p>
-                  <div className="h-96 my-2 md:h-[60vh] overflow-y-auto">
+                  <div className="h-96 my-2 md:h-[60vh] flex items-center overflow-y-auto">
                     <div
-                      className="text-base my-0 text-justify"
+                      className="text-base  my-0 text-justify"
                       dangerouslySetInnerHTML={{
                         __html: ind.content,
                       }}
