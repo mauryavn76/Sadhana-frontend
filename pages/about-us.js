@@ -61,7 +61,7 @@ export default function About({ data }) {
                 key={i}
                 id="about-main"
                 style={{ background: `${ind.background.hex}` }}
-                className="flex flex-col lg:grid grid-cols-[50%_50%]  h-full xl:h-[calc(100vh-80px)] px-2 text-black"
+                className="flex flex-col justify-center items-center lg:grid grid-cols-[50%_50%]  h-full xl:h-[calc(100vh-80px)] px-2 text-black"
               >
                 <div className="text-sm px-4 md:py-5">
                   <p className="font-semibold text-3xl  text-gray-800 mb-3 mt-3">
