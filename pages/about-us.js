@@ -64,12 +64,12 @@ export default function About({ data }) {
                 className="flex flex-col justify-center items-center lg:grid grid-cols-[50%_50%]  h-full xl:h-[calc(100vh-80px)] px-2 text-black"
               >
                 <div className="text-sm px-4 md:py-5">
-                  <p className="font-semibold text-3xl  text-gray-800 mb-3 mt-3">
+                  <p className="font-semibold text-3xl text-gray-800 mb-3 mt-3">
                     {ind.title}
                   </p>
-                  <div className="h-96 my-2 md:h-[60vh] flex items-center overflow-y-auto">
+                  <div className="h-[25%] my-2 md:h-[50%] flex items-center overflow-y-auto">
                     <div
-                      className="text-base  my-0 text-justify"
+                      className="md:text-base my-0 md:text-justify text-sm"
                       dangerouslySetInnerHTML={{
                         __html: ind.content,
                       }}

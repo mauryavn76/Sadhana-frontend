@@ -7,26 +7,23 @@ const AboutUs = () => {
           src="Images-new/Home/home-section.svg"
         />
       </div>
-      <div className="bg-[#36bcaf] h-full font-medium text-md p-4 rounded-xl">
+      <div className="bg-[#36bcaf] h-full font-medium text-md text-justify px-4 py-3 rounded-xl">
         <p>
           Ancient science which could not be preserved, has a lot of such
           information, which science has now started admitting. Science now
           admits that body cells regenerate and replace old cells on their own
           and it is an inbuilt auto process.
         </p>
-        <br />
         <p>
           People have forgotten and have not explored its inbuilt capabilities
           of self-healing, which with his other creations makes it fully
           selfdependent
         </p>
-        <br />
         <p>
           All of us should value and respect and make best use of the same for
           humankind. Effort has been made to understand and explore those
           capabilities of self-healing by natural means
         </p>
-        <br />
         <p>
           We are here to assist you in exploring your recreational forces within
           you.

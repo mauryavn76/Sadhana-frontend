@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start -p 8000",
+    "export":"next export",
     "build:dev": "NEXT_PUBLIC_ENVIRONMENT=Dev next build",
     "start:dev": "NEXT_PUBLIC_ENVIRONMENT=Dev next start -p 8001",
     "lint": "next lint"

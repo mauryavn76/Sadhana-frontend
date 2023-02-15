@@ -11,10 +11,10 @@ import AwarenessHome from '../components/home/awareness-home';
 export default function Home() {
   return (
     <div>
-      <div>
+      <div className='pt-20'>
         <Banner image="/images/home-images/home-banner.jpg" />
-        <div className="absolute top-[70px] p-3 w-full bg-gray-200 bg-opacity-50 flex justify-center items-center text-center">
-          <p className="text-black font-sans m-0 p-0 font-semibold text-xl md:text-3xl lg:text-4xl text-center">
+        <div className="absolute top-[80px]  p-3 w-full h-20 bg-gray-200 bg-opacity-50 flex justify-center items-center text-center">
+          <p className="text-black font-sans m-0 p-0 font-semibold text-base md:text-3xl lg:text-4xl text-center">
             HUMAN BODY IS THE MOST SOPHISTICATED MACHINE GIFTED BY THE ALMIGHTY
             TO HUMANKIND
           </p>
